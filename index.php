@@ -11,8 +11,8 @@ require 'app/bootstrap.php';
 //var_dump($config);
 $connectDb = new App\Config\connectDb();
 $crud = new App\Config\crud($connectDb);
-//$crud->insert([['Szymon', 'Tyrul'], ['Adam', 'Ryszard']]);
+//$crud->create([['Szymon', 'Tyrul'], ['Adam', 'Ryszard']]);
 //$crud->update(["Max" => "Ryszard"]);
-//$crud->remove([27, 28]);
+//$crud->delete([27, 28]);
 
 var_dump($crud->read("SELECT * from books"));

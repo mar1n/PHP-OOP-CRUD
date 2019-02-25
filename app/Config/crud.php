@@ -45,7 +45,7 @@ class crud {
      * @param array $multiArray two dimensional array as example [[1,2], [4,5],[7,8]]
      * @return int last insert Id inside table
      */
-    public function insert($multiArray) {
+    public function create($multiArray) {
 
         $table = 'books';
         $columns = array('title', 'primary_author');
@@ -86,7 +86,7 @@ class crud {
      * @param array $ids one dimensional
      * @return int number of deleted records
      */
-    public function remove($ids)
+    public function delete($ids)
     {
         $pdo = $this->connectDb;
         $id = array();

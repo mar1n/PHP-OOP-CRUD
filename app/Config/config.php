@@ -3,11 +3,11 @@
 /**
  * @var string name of database
  */
-define('DBNAME', 'postgres');
+define('DBNAME', '******');
 /**
  * @var string user name of database
  */
-define('DBUSER', 'postgres');
+define('DBUSER', '******');
 /**
  * @var string password of database
  */
